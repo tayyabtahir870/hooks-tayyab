@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
+import Useeffecthook from './Components/Useeffecthook';
+import Usememohook from './Components/Usememohook';
+import Usestatehook from './Components/Usestatehook';
+
 
 function App() {
+  useEffect(()=>{
+  alert("useeffect");
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+{/*            
+       <Usestatehook/>
+       <Useeffecthook/> */}
+       <Usememohook/>
     </div>
   );
 }
